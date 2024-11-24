@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense App - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="app-header">
+            <h1>Expense Dashboard</h1>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Account Balance Section -->
+            <section class="account-balance">
+                <h2>Total Balance</h2>
+                <p class="balance-amount">$5,000</p>
+                <div class="summary">
+                    <div class="summary-item">
+                        <p>Income</p>
+                        <p class="income">$12,225</p>
+                    </div>
+                    <div class="summary-item">
+                        <p>Expenses</p>
+                        <p class="expenses">$1,225</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Transaction Tabs -->
+            <section class="transactions">
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="daily">Daily</button>
+                    <button class="tab-btn" data-tab="weekly">Weekly</button>
+                    <button class="tab-btn" data-tab="monthly">Monthly</button>
+                </div>
+
+                <!-- Daily Transactions -->
+                <div class="tab-content active" id="daily">
+                    <h3>Daily Transactions</h3>
+                    <ul class="transaction-list">
+                        <li><span>Breakfast - Cafe Latte</span><span class="amount negative">- $5</span></li>
+                        <li><span>Taxi to Work</span><span class="amount negative">- $12</span></li>
+                        <li><span>Groceries</span><span class="amount negative">- $25</span></li>
+                        <li><span>Salary Income</span><span class="amount positive">+ $150</span></li>
+                        <li><span>Lunch</span><span class="amount negative">- $20</span></li>
+                        <li><span>Parking</span><span class="amount negative">- $10</span></li>
+                        <li><span>Snack</span><span class="amount negative">- $8</span></li>
+                        <li><span>Tip to Delivery</span><span class="amount negative">- $3</span></li>
+                    </ul>
+                </div>
+
+                <!-- Weekly Transactions -->
+                <div class="tab-content hidden" id="weekly">
+                    <h3>Weekly Transactions</h3>
+                    <ul class="transaction-list">
+                        <li><span>Freelance Income</span><span class="amount positive">+ $500</span></li>
+                        <li><span>Electricity Bill</span><span class="amount negative">- $100</span></li>
+                        <li><span>Shopping - Clothes</span><span class="amount negative">- $200</span></li>
+                        <li><span>Dining Out</span><span class="amount negative">- $60</span></li>
+                        <li><span>Gym Subscription</span><span class="amount negative">- $50</span></li>
+                        <li><span>Car Fuel</span><span class="amount negative">- $120</span></li>
+                        <li><span>Household Items</span><span class="amount negative">- $40</span></li>
+                    </ul>
+                </div>
+
+                <!-- Monthly Transactions -->
+                <div class="tab-content hidden" id="monthly">
+                    <h3>Monthly Transactions</h3>
+                    <ul class="transaction-list">
+                        <li><span>Rent</span><span class="amount negative">- $800</span></li>
+                        <li><span>Salary</span><span class="amount positive">+ $5,000</span></li>
+                        <li><span>Internet Bill</span><span class="amount negative">- $50</span></li>
+                        <li><span>Netflix Subscription</span><span class="amount negative">- $15</span></li>
+                        <li><span>Health Insurance</span><span class="amount negative">- $300</span></li>
+                        <li><span>Credit Card Payment</span><span class="amount negative">- $1,200</span></li>
+                        <li><span>Home Maintenance</span><span class="amount negative">- $150</span></li>
+                        <li><span>Charity Donation</span><span class="amount negative">- $100</span></li>
+                        <li><span>Freelance Income</span><span class="amount positive">+ $1,000</span></li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer Navigation -->
+        <footer class="app-footer">
+            <nav>
+                <a href="homepage.html" class="nav-item active">
+                    <span class="icon">🏠</span>
+                    <span>Home</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="icon">📊</span>
+                    <span>Budget</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="icon">💰</span>
+                    <span>Savings</span>
+                </a>
+                <a href="settings.html" class="nav-item">
+                    <span class="icon">⚙️</span>
+                    <span>Settings</span>
+                </a>
+                
+            </nav>
+        </footer>
+    </div>
+</body>
+</html>
